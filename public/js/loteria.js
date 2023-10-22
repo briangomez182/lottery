@@ -18,7 +18,7 @@ startButton.addEventListener("click", () => {
         generateRandomNumberAndDisplay();
 
         // Establecer el intervalo para los siguientes números
-        intervalId = setInterval(generateRandomNumberAndDisplay, 30000); // 30 segundos
+        intervalId = setInterval(generateRandomNumberAndDisplay, 15000); // 15 segundos
     }
 });
 

@@ -10,7 +10,6 @@ startButton.addEventListener("click", () => {
         clearInterval(intervalId);
         intervalId = null;
         startButton.textContent = "Iniciar Lotería";
-        usedNumbers.clear(); // Limpiar los números usados al detener la lotería
     } else {
         startButton.textContent = "Detener Lotería";
 
@@ -18,7 +17,7 @@ startButton.addEventListener("click", () => {
         generateRandomNumberAndDisplay();
 
         // Establecer el intervalo para los siguientes números
-        intervalId = setInterval(generateRandomNumberAndDisplay, 15000); // 15 segundos
+        intervalId = setInterval(generateRandomNumberAndDisplay, 500); // 25 segundos
     }
 });
 

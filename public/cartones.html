@@ -8,10 +8,8 @@
 
     <link rel="stylesheet" href="./css/animalitos.css" />
   </head>
-  <body>
-    <button id="generarNumeros">Generar Nuevo Carton de Animalitos</button>
-
-    <br>
+  <body class="bo-cartones">
+    <button id="generarNumeros" class="btn">Nuevos Cartones</button>
     <section class="cartones">
       <div class="carton">
         <!-- Los números generados se agregarán aquí -->
@@ -19,18 +17,21 @@
         
       </div>
 
-      <br>
-      <br>
-      <br>
-  
       <div class="carton2">
         <!-- Los números generados se agregarán aquí -->
   
         
       </div>
-    </section>
+
+
+
+     </section>
+
+     <button id="conservarCarton" class="btn" onclick="conservar()">Conservar carton</button>
+
 
     <script src="./js/animalitos.js"></script>
     <script src="./js/animalitos2.js"></script>
+    <script src="./js/cartonClick.js"></script>
   </body>
 </html>

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let listado = "";
 
         for (let i = 0; i < 25; i++) {
-            listado += `<article class="articulo">
+            listado += `<article class="articulo animalNumero${numeros[i]}">
                                 <div class="animal">
                                     <img src="./img/(${numeros[i]}).jpg" alt="" />
                                 </div>
@@ -28,5 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         cartonDiv.innerHTML = listado;
+        clickAnimal()
+
+
     });
 });

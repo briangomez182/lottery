@@ -4,8 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     generarNumerosBtn.addEventListener("click", function () {
 
+
+
         generarNumerosBtn.style.display = "none";
-        // Limpiar el contenido actual del cartonDiv
         cartonDiv.innerHTML = "";
 
         // Crear un array con los números del 1 al 32
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let listado = "";
 
         for (let i = 0; i < 25; i++) {
-            listado += `<article class="articulo">
+            listado += `<article class="articulo animalNumero${numeros[i]}">
                                 <div class="animal">
                                     <img src="./img/(${numeros[i]}).jpg" alt="" />
                                 </div>
@@ -30,5 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         cartonDiv.innerHTML = listado;
+
+        if (location.pathname != "/cartones.html") {
+            clickAnimal()
+        }
     });
 });
+
+
